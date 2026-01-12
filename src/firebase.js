@@ -3,15 +3,14 @@ import { getAuth } from "firebase/auth";
 import { getFirestore } from "firebase/firestore";
 
 const firebaseConfig = {
-  apiKey: process.env.REACT_APP_FIREBASE_API_KEY,
-  authDomain: process.env.REACT_APP_FIREBASE_AUTH_DOMAIN,
-  projectId: process.env.REACT_APP_FIREBASE_PROJECT_ID,
-  storageBucket: process.env.REACT_APP_FIREBASE_STORAGE_BUCKET,
-  messagingSenderId: process.env.REACT_APP_FIREBASE_MESSAGING_SENDER_ID,
-  appId: process.env.REACT_APP_FIREBASE_APP_ID,
-  measurementId:process.env.REACT_APP_FIREBASE_MEASUREMENT_ID,
+  apiKey: "AIzaSyBzXBTiqrcoWfBZWBVUcUgXQs0QK46jcwU",
+  authDomain: "gymate-gym-b27c4.firebaseapp.com",
+  projectId: "gymate-gym-b27c4",
+  storageBucket: "gymate-gym-b27c4.appspot.com",
+  messagingSenderId: "300564235489",
+  appId: "1:300564235489:web:4c90a395626bcb211763a0",
+  measurementId: "G-2690KW7NNB"
 };
-console.log("FIREBASE KEY:", process.env.REACT_APP_FIREBASE_API_KEY);
 
 const app = initializeApp(firebaseConfig);
 export const auth = getAuth(app);
