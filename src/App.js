@@ -28,7 +28,6 @@ function App() {
       <AuthContextProvider>
         <Navbar />
         <Routes >
-          <Route path="/gym" element={<Home />} />
           <Route path="/" element={<Home />} />
           <Route path="contact" element={<Contact />} />
           <Route path="login" element={<Login />} />
